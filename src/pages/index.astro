@@ -23,7 +23,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Mingalaba</h1>
+      <h1>Welcome to my site.</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -42,19 +42,30 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        Hi this is my site! Where I (intend to) put the cool things I have made.
+        I have just finished my PhD so please bear with my while I get things
+        sorted. Cool things are coming soon.
       </p>
       <p>
-        Read the blog posts or check
-        <LinkButton
+        My PhD was in mesoscale simulation, with a focus on developing new
+        methods for mesoscale simulation. My expertise are in High-Performance
+        Computing (HPC), software developement for HPC, Molecular simulation
+        (including Molecular Dynamics and Monte Carlo Simulation) and
+        statistical mechanics. I also have some experience integrating machine
+        learning techniques into molecular simulation (and is something I am
+        looking to expand on in the near future).
+      </p>
+      <p>
+        My current tech interest outside the PhD is simulation using web
+        technologies for physics simulation (especially WebAssembley and
+        WebGPU). If you want to get an idea about what I'm up to at the moment I
+        sugggest lookking at <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
+          href="https://github.com/jamesesso/cfd-rt"
         >
-          README
-        </LinkButton> for more info.
+          cfd-rt
+        </LinkButton>, my interactive, real time fluid simulation written in
+        Rust and WebGPU.
       </p>
       {
         // only display if at least one social link is enabled
