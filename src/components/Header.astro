@@ -2,10 +2,15 @@
 import { LOGO_IMAGE, SITE } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
+import { getCollection } from "astro:content";
+import getSortedPosts from "@utils/getSortedPosts";
 
 export interface Props {
   activeNav?: "posts" | "archives" | "tags" | "about" | "search";
 }
+
+const posts = await getCollection("blog");
+const sortedPosts = getSortedPosts(posts);
 
 const { activeNav } = Astro.props;
 ---
@@ -55,6 +60,7 @@ const { activeNav } = Astro.props;
           </svg>
         </button>
         <ul id="menu-items" class="display-none sm:flex">
+        { sortedPosts.length > 0 && (
           <li>
             <a href="/posts/" class={activeNav === "posts" ? "active" : ""}>
               Posts
@@ -64,7 +70,8 @@ const { activeNav } = Astro.props;
             <a href="/tags/" class={activeNav === "tags" ? "active" : ""}>
               Tags
             </a>
-          </li>
+          </li>)
+        }
           <li>
             <a href="/about/" class={activeNav === "about" ? "active" : ""}>
               About Me
