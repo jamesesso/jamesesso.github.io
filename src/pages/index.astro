@@ -59,13 +59,20 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         My current tech interest outside the PhD is simulation using web
         technologies for physics simulation (especially WebAssembley and
         WebGPU). If you want to get an idea about what I'm up to at the moment I
-        sugggest lookking at <LinkButton
+        sugggest looking at <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
           href="https://github.com/jamesesso/cfd-rt"
         >
           cfd-rt
         </LinkButton>, my interactive, real time fluid simulation written in
-        Rust and WebGPU.
+        Rust and WebGPU. If you want to get to know me more, check out my
+        <LinkButton
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+          href="about"
+        >
+          about me
+        </LinkButton>
+        page.
       </p>
       {
         // only display if at least one social link is enabled
@@ -120,18 +127,17 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       )
     }
 
-        {sortedPosts.length > 0 && (
+    {
+      sortedPosts.length > 0 && (
         <div class="all-posts-btn-wrapper">
           <LinkButton href="/posts/">
             All Posts
-            <svg xmlns="http://www.w3.org/2000/svg"
-              ><path
-                d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-              ></path>
+            <svg xmlns="http://www.w3.org/2000/svg">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
             </svg>
           </LinkButton>
         </div>
-        )
+      )
     }
   </main>
 
