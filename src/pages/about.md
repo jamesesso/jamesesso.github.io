@@ -6,10 +6,11 @@ title: "About Me"
 Hi, I'm James, and I have recently finished my PhD (just pending corrections).
 My research focused on developing new methods for mesoscale simulation, with a view towards developing fast and accurate models for aggregating systems found in soft matter, such as surfactant solutions, gels, and biological systems.
 I would describe my role as a combination of both that of a computational scientist and a software engineer. Through my PhD I have developed a love for all things simulation, high-performance computing (HPC), and low-level software development. I also have a love of all things science in general.
+
 ## My PhD Research
 
-My research focuses on developing new methods for mesoscale simulation. 
-In particular, these systems are too large for all-atom molecular simulation, but at the same time, faster techniques such as traditional dissipative particle dynamics (DPD) produce poor predictions of the thermophysical properties. 
+My research focuses on developing new methods for mesoscale simulation.
+In particular, these systems are too large for all-atom molecular simulation, but at the same time, faster techniques such as traditional dissipative particle dynamics (DPD) produce poor predictions of the thermophysical properties.
 My goal was to investigate a class of potential that is similar to dissipative particle dynamics yet incorporates information from a highly accurate equation of state into the potential.
 This yields a potential with similar numerical properties to the DPD potential, while being able to achieve quantitative predictions of the thermophysical properties at the same time.
 
